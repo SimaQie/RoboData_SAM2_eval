@@ -19,7 +19,7 @@
 ### 1. 克隆仓库
 ```bash
 git clone <repository-url>
-cd sam2-background-replacement
+cd sam2
 ```
 
 ### 2. 安装依赖
@@ -36,7 +36,7 @@ cd ..
 
 ### 4. 运行示例
 ```bash
-python sam2_background_replacement.py
+python background_replacement.py
 ```
 
 ## 项目结构
@@ -44,7 +44,7 @@ python sam2_background_replacement.py
 ```
 .
 ├── setup.py                    # 包安装配置
-├── sam2_background_replacement.py    # 主程序文件
+├── background_replacement.py    # 主程序文件
 ├── checkpoints/
 │   ├── download_ckpts.sh       # 模型下载脚本
 │   └── sam2.1_hiera_large.pt   # SAM2 模型权重（下载后）
@@ -54,8 +54,7 @@ python sam2_background_replacement.py
 ├── notebooks/
 │   └── images/
 │       └── plate_hand.jpg      # 示例输入图像
-└── scripts/
-    └── batch_process.py        # 批量处理脚本（可选）
+└── batch_process.py        # 批量处理脚本（可选）
 ```
 
 ## 使用方法
@@ -79,7 +78,7 @@ image = Image.open('./notebooks/images/your_image.jpg')
 
 处理整个目录的图像：
 ```bash
-python scripts/batch_process.py --input-dir ./input_images/ --output-dir ./output_results/
+python batch_process.py --input-dir ./input_images/ --output-dir ./output_results/
 ```
 
 ## 输出文件

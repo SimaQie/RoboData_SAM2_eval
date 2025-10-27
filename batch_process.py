@@ -91,7 +91,6 @@ def main():
     
     args = parser.parse_args()
     
-    # 检查输入目录是否存在
     if not os.path.exists(args.input_dir):
         print(f"错误: 输入目录不存在: {args.input_dir}")
         return
