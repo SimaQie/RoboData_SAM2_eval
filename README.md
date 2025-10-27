@@ -65,7 +65,7 @@ python sam2_background_replacement.py
 直接运行主程序文件处理默认图像：
 
 ```bash
-python sam2_background_replacement.py
+python background_replacement.py
 ```
 
 ### 处理自定义图像
@@ -182,13 +182,6 @@ def custom_mask_selector(masks, image):
     # 实现自定义选择逻辑
     # 返回选中的掩码索引列表
     return selected_indices
-```
-
-### 测试
-
-运行测试用例：
-```bash
-python -m pytest tests/
 ```
 
 ## 许可证
